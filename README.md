@@ -1,9 +1,3 @@
----
-# Petunjuk README.md untuk Proyek Next.js `frontend-ahmad-nasirin`
-
-Berikut adalah draf `README.md` yang lebih sederhana untuk repositori Next.js Anda.
----
-
 # `frontend-ahmad-nasirin`
 
 ### Kloning Repositori
