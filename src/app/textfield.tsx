@@ -8,7 +8,7 @@ export default function TextField({
   disabled,
   onChange,
   endIcon,
-  value, // Ini akan menjadi satu-satunya sumber kebenaran untuk nilai input
+  value,
   readonly,
   type = "number",
 }: {
@@ -19,7 +19,7 @@ export default function TextField({
   label: string;
   onChange: (value: string) => void;
   endIcon?: boolean;
-  value: string | number; // Tetap bisa menerima string atau number dari parent
+  value: string | number;
 }) {
   return (
     <div className="relative w-full">

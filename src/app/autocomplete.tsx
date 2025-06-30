@@ -62,7 +62,6 @@ export default function Autocomplete<T extends { [key: string]: any }>({
           setShowOptions(true); // Tampilkan opsi saat mulai mengetik
         }}
         onFocus={() => setShowOptions(true)} // Tampilkan opsi saat input difokuskan
-        // onBlur={() => setShowOptions(false)} // Hati-hati dengan onBlur, bisa menutup terlalu cepat
         placeholder={placeholder}
         disabled={disabled}
         className={`border-b-2 disabled:bg-gray-300 rounded-t-lg disabled:placeholder:text-gray-500 focus:border-blue-500 border-gray-500  focus:outline-none p-2 peer`}
@@ -86,7 +85,7 @@ export default function Autocomplete<T extends { [key: string]: any }>({
                     ? option.nama_pelabuhan
                     : option.nama_barang)
                     ? "bg-green-100"
-                    : "" // Gunakan === untuk perbandingan ketat
+                    : ""
                 }`}
                 onClick={() => {
                   setInputValue(
